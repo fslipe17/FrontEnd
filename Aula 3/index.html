@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Recrutamento Online</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        body{
+            background-color: rgb(87, 80, 80);
+            color: aliceblue;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        fieldset{
+            color: black;
+            border-color: rgb(0, 0, 0);
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <h1>Recrutamento Online</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadestre seu Curriculo</h2>
+            <p>Preencha o Formulário  para se candidatar à vaga</p>
+            
+            <!-- Preenchido o action e o method -->
+            <!-- A foto é um arquivo, obriga o enctype ser multipart -->
+            <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                <fieldset>
+                <legend>Dados Pessoias</legend>
+
+                <!-- Campo novo de foto -->
+                <div>
+                    <label for="foto-id">Foto: </label>
+                    <input id="foto-id" name="foto" type="file" accept="image/*">
+                </div>
+                
+                <!-- Adicionado Placeholder -->
+                <div>
+                    <label for="nome_id">Nome Completo</label>
+                    <input id="nome_id" name="nome" type="text" placeholder="João da Silva" >
+                </div>
+
+                <!-- Adicionado required -->
+                <div>
+                    <label for="telefone_id">Telefone</label>
+                    <input id="telefone_id" name="telefono" type="tel" required>
+                </div>
+
+                <div>
+                    <label for="email_id">E-mail</label>
+                    <input id="email_id" name="email" type="email">
+                </div>
+
+                <div>
+                    <label for="dataNasc_id">Data de Nascimento</label>
+                    <input id="dataNasc_id" name="data de nascimento" type="date">
+                </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <div>
+                        <label for="rua_id">Rua:</label>
+                        <input id="rua_id" name="rua" type="text">
+                    </div>
+
+                    <div>
+                        <label for="cidade_id">Cidade-UF</label>
+                        <input id="cidade_id" name="cidade" type="text">
+                    </div>
+
+                    <div>
+                        <label for="numero_id">Número</label>
+                        <input id="numero_id" name="numero" type="number">
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Biografia</legend>
+                    <div>
+                        <label for="resumo_id">Escreva sobre você:</label>
+                        <textarea name="resumo" id="resumo_id" rows="1"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nível Pretendido</legend>
+                    <div>
+                        <input id="estagiario_id" name="nivel" type="radio" value="estagiario">
+                        <label for="estagiario_id">Estagiário</label>
+                    </div>
+                    <div>
+                        <input id="junior_id" name="nivel" type="radio" value="junior">
+                        <label for="junior_id">Júnior</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tecnologias</legend>
+                    <div>
+                        <input id="tec-html-id" name="tecnologias" type="checkbox" value="html">
+                        <label for="tec-html-id">Html</label>
+                    </div>
+
+                    <div>
+                        <input id="tec-css-id" name="tecnologias" type="checkbox" value="css">
+                        <label for="tec-css-id">Css</label>
+                    </div>
+
+                    <div>
+                        <input id="tec-js-id" name="tecnologias" type="checkbox" value="js">
+                        <label for="tec-js-id">Java Script</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Grau de instrução</legend>
+                    <div>
+                        <label for="escolaridade_id">Escolaridade</label>
+                        <select name="escolaridade" id="escolaridade_id">
+                            <option value="medio">Ensino Médio</option>
+                            <option value="graduacao">Graduação</option>
+                            <option value="pos">Pós-graduação</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <button type="reset">Limpar Dados</button>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
