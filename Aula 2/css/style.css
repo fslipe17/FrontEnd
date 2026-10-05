@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    height: 100%;
+    background: #020024;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 67%, rgba(9, 9, 121, 1) 48%, rgba(0, 212, 255, 1) 98%);
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.DadosPessoais{
+   flex-direction: column;
+    width: 30%;
+}
+
+.nome{
+    color: rgb(204, 204, 204);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.endereçoTelefone{
+    width: 100%;
+}
+.endereco{
+    color: rgb(204, 204, 204);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: start;
+}
+.Telefone{
+    color: rgb(204, 204, 204);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: start;
+}
+.dataNac{
+    color: rgb(204, 204, 204);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: start;
+}
+.email{
+    color: rgb(204, 204, 204);
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: start;
+}
+.linkedin{
+    color: rgb(204, 204, 204);
+    margin-bottom: 10px;
+    width: 100%;
+    text-decoration: none;
+    text-align: start;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.imgEU{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0px -28px;
+    border: 2px solid rgb(105, 225, 255);
+}
